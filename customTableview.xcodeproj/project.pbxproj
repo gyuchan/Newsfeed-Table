@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE98CC261626A2FD0050190A /* like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE98CC251626A2FD0050190A /* like@2x.png */; };
+		DE98CC2A1626ADB00050190A /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = DE98CC291626ADB00050190A /* sample.png */; };
 		DE98F3941623AE6D003755FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE98F3931623AE6D003755FA /* UIKit.framework */; };
 		DE98F3961623AE6D003755FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE98F3951623AE6D003755FA /* Foundation.framework */; };
 		DE98F3981623AE6D003755FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE98F3971623AE6D003755FA /* CoreGraphics.framework */; };
@@ -18,9 +20,14 @@
 		DE98F3AA1623AE6D003755FA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE98F3A91623AE6D003755FA /* Default-568h@2x.png */; };
 		DE98F3AD1623AE6D003755FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE98F3AC1623AE6D003755FA /* ViewController.m */; };
 		DE98F3B01623AE6D003755FA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE98F3AE1623AE6D003755FA /* ViewController.xib */; };
+		DE98F3B81623AF25003755FA /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE98F3B71623AF25003755FA /* CustomCell.m */; };
+		DE98F3BA1623AF32003755FA /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE98F3B91623AF32003755FA /* CustomCell.xib */; };
+		DE98F3E81623F544003755FA /* ballon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE98F3E71623F544003755FA /* ballon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE98CC251626A2FD0050190A /* like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like@2x.png"; sourceTree = "<group>"; };
+		DE98CC291626ADB00050190A /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
 		DE98F38F1623AE6D003755FA /* customTableview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customTableview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE98F3931623AE6D003755FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE98F3951623AE6D003755FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +44,10 @@
 		DE98F3AB1623AE6D003755FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DE98F3AC1623AE6D003755FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DE98F3AF1623AE6D003755FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		DE98F3B61623AF25003755FA /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		DE98F3B71623AF25003755FA /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		DE98F3B91623AF32003755FA /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		DE98F3E71623F544003755FA /* ballon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,10 @@
 		DE98F3841623AE6D003755FA = {
 			isa = PBXGroup;
 			children = (
+				DE98F3EA1623F546003755FA /* image */,
+				DE98F3B61623AF25003755FA /* CustomCell.h */,
+				DE98F3B71623AF25003755FA /* CustomCell.m */,
+				DE98F3B91623AF32003755FA /* CustomCell.xib */,
 				DE98F3991623AE6D003755FA /* customTableview */,
 				DE98F3921623AE6D003755FA /* Frameworks */,
 				DE98F3901623AE6D003755FA /* Products */,
@@ -105,6 +120,16 @@
 				DE98F3A91623AE6D003755FA /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE98F3EA1623F546003755FA /* image */ = {
+			isa = PBXGroup;
+			children = (
+				DE98CC291626ADB00050190A /* sample.png */,
+				DE98CC251626A2FD0050190A /* like@2x.png */,
+				DE98F3E71623F544003755FA /* ballon.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +188,10 @@
 				DE98F3A81623AE6D003755FA /* Default@2x.png in Resources */,
 				DE98F3AA1623AE6D003755FA /* Default-568h@2x.png in Resources */,
 				DE98F3B01623AE6D003755FA /* ViewController.xib in Resources */,
+				DE98F3BA1623AF32003755FA /* CustomCell.xib in Resources */,
+				DE98F3E81623F544003755FA /* ballon.png in Resources */,
+				DE98CC261626A2FD0050190A /* like@2x.png in Resources */,
+				DE98CC2A1626ADB00050190A /* sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +205,7 @@
 				DE98F3A01623AE6D003755FA /* main.m in Sources */,
 				DE98F3A41623AE6D003755FA /* AppDelegate.m in Sources */,
 				DE98F3AD1623AE6D003755FA /* ViewController.m in Sources */,
+				DE98F3B81623AF25003755FA /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +322,7 @@
 				DE98F3B51623AE6D003755FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
